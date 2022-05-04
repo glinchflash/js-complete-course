@@ -11,7 +11,7 @@ const movies = [
   `Lawrence of Arabia`,
 ];
 
-const wrapWithTag = (content, tagname) => {
+ const wrapWithTag = (content, tagname) => {
   return `<${tagname}>${content}</${tagname}>`;
 };
 

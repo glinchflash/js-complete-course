@@ -17,7 +17,10 @@ const tvshows = [
 ];
 
 document.write(`<ol>`);
-for (let i = 0; i < movies.length; i++) {
-  document.write(`<li>${movies[i]}</li>`);
+for (let i = 14; i > -1; i--) {
+  document.write(`<li>${tvshows[i]}</li>`);
+  console.log(tvshows[i])
+  console.log([i])
 }
 document.write(`</ol>`);
+

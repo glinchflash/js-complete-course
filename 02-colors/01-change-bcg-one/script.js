@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+    let btnred = document.getElementById("red");
+    let btngreen = document.getElementById("green");
+    let btnyellow = document.getElementById("yellow");
+    let btnblue = document.getElementById("blue");
 
+    btnred.addEventListener("click", bgtored);
+    btngreen.addEventListener("click", bgtogreen);
+    btnyellow.addEventListener("click", bgtoyellow);
+    btnblue.addEventListener("click", bgtoblue);
+
+    function bgtored(){
+        document.body.style.backgroundColor = "red";
+    }
+    function bgtogreen(){
+        document.body.style.backgroundColor = "green";
+    }
+    function bgtoyellow(){
+        document.body.style.backgroundColor = "yellow";
+    }
+    function bgtoblue(){
+        document.body.style.backgroundColor = "blue";
+    }
 })();

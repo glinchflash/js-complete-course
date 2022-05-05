@@ -11,6 +11,8 @@
 
 (function() {
 
-    // your code here
+    const name = window.prompt("Enter your name: ");
+    alert("Hello, " + name);
+
 
 })();

@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+    let bg = document.getElementById("color");
+    let btnrun = document.getElementById("run");
 
-    // your code here
+    btnrun.addEventListener('click',colorchange);
+
+    function colorchange(){
+        document.body.style.backgroundColor = bg.value;
+    }
 
 })();

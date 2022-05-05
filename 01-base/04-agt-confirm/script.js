@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function info() {
 
-    // your code here
+    let age = window.prompt("How old are you?");
+    let gender = window.prompt("Are you a boy or a girl?");
+    let town = window.prompt("Where do you live?");
 
+    let submit = confirm("is the following information correct?" + "age: " + age + " gender: " + gender + " town: " + town);
+
+    if (submit === false){
+        info();
+    }
 })();

@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    const prefix = ("#")
+    const setBg = () => {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = prefix + randomColor;
+        color = prefix + randomColor;
+    }
+    run.addEventListener("click", setBg);
+    setBg();
 })();

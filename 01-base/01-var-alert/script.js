@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    let x = 'Hello, World!';
+    console.log(x);
+    alert(x);
 })();

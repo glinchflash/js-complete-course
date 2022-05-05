@@ -12,7 +12,13 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    const date = new Date;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const hours = date.getHours();
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    let currentDate = date.toLocaleString('en-US', options);
+    let currentDate2 = currentDate.replace(/,/g, '')
 
-    // your code here
+    document.getElementById("target").innerText = currentDate2 + ", " + hours + "h" + minutes;
 
 })();

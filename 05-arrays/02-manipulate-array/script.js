@@ -24,6 +24,11 @@
         "cerise",
     ];
 
-    // your code here
-
+    run.addEventListener('click', manarray);
+    
+    function manarray() {
+        fruits[0] = "banana";
+        fruits[fruits.length - 1] = "kiwi";
+        alert(fruits);
+    }
 })();

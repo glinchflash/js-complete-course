@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    run.addEventListener('click', loop);
     var fruits = [
         "pomme",
         "poire",
@@ -25,7 +25,9 @@
         "raisin",
         "cerise",
     ];
-
+    function loop() {
+        fruits.forEach(element => console.log(element));
+    }
     // your code here
 
 })();

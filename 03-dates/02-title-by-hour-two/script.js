@@ -12,14 +12,30 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    let date = new Date();
+   let date = new Date();
     let hour = date.getHours();
     let minutes = date.getMinutes();
+    let array =[hour, minutes]
 
-    if (hour < 18 && minutes<=30) {
+    console.log(hour);
+    console.log(minutes);
+    console.log(array);
+/*
+    if (array[0] <=17){
         document.getElementById(`target`).innerHTML = "Hello!";
-    } else {
+    } else if(array[1] <15){
+        document.getElementById(`target`).innerHTML = "Good evening!";
+    } */
+
+
+    if (hour < 17 ) {
+        document.getElementById(`target`).innerHTML = "Hello!";
+    } else if (hour === 17 && minutes <= 30){
+        document.getElementById(`target`).innerHTML = "Hello!";
+    }
+    else {
         document.getElementById(`target`).innerHTML = "Good evening!";
     }
+
 
 })();

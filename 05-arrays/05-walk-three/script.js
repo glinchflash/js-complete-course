@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    run.addEventListener('click',loop);
     var people = [
         {
             firstname: "Garald",
@@ -38,7 +38,8 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
-
-    // your code here
+    function loop() {
+        people.forEach(people => console.log(`${people.firstname}`));
+    }
 
 })();

@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    run.addEventListener("click", fruit);
     var fruits = [
         "apple",
         "pear",
@@ -25,7 +25,9 @@
         "grap",
         "cherry",
     ];
+    function fruit() {
+        alert(fruits[3]);
+    }
 
-    // your code here
 
 })();

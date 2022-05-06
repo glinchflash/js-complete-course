@@ -17,6 +17,7 @@
             let result = i * i;
             /*if (result < 21){*/ /*activating this will give perfect square numbers between 1 and 21*/
                 console.log(result);
+                alert(result);
             /*}*/
 
         }

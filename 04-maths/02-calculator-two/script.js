@@ -15,15 +15,15 @@
     const two = document.getElementById('op-two');
 
     var performOperation = function (operation) {
-        const opOne = parseInt(one.value);
-        const opTwo = parseInt(two.value);
+        const opOne = Number(one.value);
+        const opTwo = Number(two.value);
         let result = 0;
         switch (operation) {
             case "addition":
                 result = (opOne + opTwo);
                 alert(result);
                 break;
-            case "substraction":
+            case "subtraction":
                 result = (opOne - opTwo);
                 alert(result);
                 break;

@@ -89,6 +89,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener("click", display)
+
+    function display() {
+    people.find(people => ${email});
+    console.log(people[8]);
+
+    }
 
 })();

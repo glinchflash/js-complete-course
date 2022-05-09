@@ -16,7 +16,7 @@
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const hours = date.getHours();
     const minutes = String(date.getMinutes()).padStart(2, '0');
-    let currentDate = date.toLocaleString('en-US', options);
+    let currentDate = date.toLocaleString('en-GB', options);
     let currentDate2 = currentDate.replace(/,/g, '')
 
     document.getElementById("target").innerText = currentDate2 + ", " + hours + "h" + minutes;

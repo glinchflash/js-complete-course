@@ -15,17 +15,10 @@
    let date = new Date();
     let hour = date.getHours();
     let minutes = date.getMinutes();
-    let array =[hour, minutes]
 
-    console.log(hour);
+  /*  console.log(hour);
     console.log(minutes);
-    console.log(array);
-/*
-    if (array[0] <=17){
-        document.getElementById(`target`).innerHTML = "Hello!";
-    } else if(array[1] <15){
-        document.getElementById(`target`).innerHTML = "Good evening!";
-    } */
+    console.log(array);*/
 
 
     if (hour < 17 ) {

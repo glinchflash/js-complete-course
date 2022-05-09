@@ -1,12 +1,13 @@
 (function () {
     const btnRun = document.getElementById('run');
+    let date = new Date();
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const targetday = 13;
     let input = document.getElementById('year');
-    btnRun.addEventListener('click', calc)
+    btnRun.addEventListener('click', calc);
 
 
-    let date = new Date();
+
     function calc() {
 
 
@@ -27,7 +28,7 @@
             }
         }
 
-        let result = "In" + input2 + ": " ;
+        let result = "In " + input2 + ": " ;
 
         for (i = 0; i < monthsWithf13.length; i++) {
 

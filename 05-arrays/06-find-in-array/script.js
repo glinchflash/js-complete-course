@@ -89,12 +89,8 @@
         },
     ];
 
-    document.getElementById('run').addEventListener("click", display)
-
-    function display() {
-    people.find(people => ${email});
-    console.log(people[8]);
-
-    }
-
+    document.getElementById("run").addEventListener("click", () => {
+       let target = people.find(({firstname , lastname}) => firstname === 'Jean' && lastname === 'Dupont');
+        console.log(`Email : ${target.email} , Index: ${people.indexOf(target)}`);
+    });
 })();

@@ -11,6 +11,7 @@
 
 (function() {
 
-    // your code here
 
+    let targets = document.querySelectorAll("section.material>p.target");
+    targets.forEach(element => element.innerHTML = "owned!");
 })();

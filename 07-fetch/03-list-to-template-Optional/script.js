@@ -10,5 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        //fetch api and link to js
+        fetch("../../_shared/api.json")
+            .then(res => res.json())
+            .then(data => {
+                //get template and link to js
+                const template = document.getElementById("tpl-hero");
+                //get data from api and do following commands for each hero listed in api
+                data.heroes.forEach(hero => {
+                    //clone template
+                    const clone = template.content.cloneNode(true);
+                    //fill in template with data grom api
+                    const name = clone.querySelector(".name");
+                    const alterEgo = clone.querySelector(".alter-ego");
+                    const power = clone.querySelector(".powers");
+                    //write/fill template
+                    name.innerText = hero.name;
+                    alterEgo.innerText = hero.alterEgo;
+                    power.innerText = hero.abilities.join(', ');
+
+                    document.getElementById("target").appendChild(clone);
+
+                });
+            });
+    });
 })();

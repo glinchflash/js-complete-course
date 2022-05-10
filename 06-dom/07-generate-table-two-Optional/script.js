@@ -9,8 +9,32 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    const table = document.createElement('table');
 
+    for (i = 0; i < 10; i++) {
+        table.insertRow().innerHTML = `${i + 1}`;
+
+    }
+
+
+    const rows = Array.from(table.getElementsByTagName('tr'))
+    rows.forEach(row => {
+        for (i = 0; i < 10; i++) {
+            row.insertCell()
+        }
+
+    });
+
+
+    for(rowCount=0;rowCount<rows.length;rowCount++){
+        const currentRow = rows[rowCount];
+        const value = currentRow.innerText;
+        for(cellCount=0;cellCount<currentRow.cells.length;cellCount++){
+            const currentCell = currentRow.cells.item(cellCount);
+            currentCell.innerHTML = `${value*(cellCount+1)}`;
+        }
+    }
+    document.getElementById('target').appendChild(table)
 })();

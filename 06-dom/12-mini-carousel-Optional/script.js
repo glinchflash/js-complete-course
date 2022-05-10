@@ -18,7 +18,16 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
+        let index = 0;
+    document.getElementById("next").addEventListener("click" , () =>{
+        if (index < gallery.length-1){
+            index++;
+            document.querySelector('img[alt="Carousel"]').src = gallery[index];
+        } else{
+            index = 0;
+            document.querySelector('img[alt="Carousel"]').src = gallery[index];
+        }
+    });
 
-    // your code here
 
 })();

@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click" , () => {
+        let pass1 = document.getElementById('pass-one');
+        let pass2 = document.getElementById('pass-two');
 
-    // your code here
+        if (pass1.value === pass2.value){
+            alert("passwords matches perfecltly!")
+        } else{
+            pass1.style.border = '0.5rem solid red';
+            pass2.style.border = '0.5rem solid red';
+        }
+
+
+    })
 
 })();
